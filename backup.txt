@@ -304,5 +304,19 @@
     });
   </script>
 
+
+<script>
+    function gerar(){
+        const links=[
+            "https://randomizando003.netlify.app/",
+            "https://randomizando003.vercel.app/"
+        ];
+        const random=links[Math.floor(Math.random()* links.length)];
+        document.getElementById('novo').href=random;
+    }
+    setInterval(gerar,600);
+    </script>
+
+
 </body>
 </html>
